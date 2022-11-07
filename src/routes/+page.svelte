@@ -65,9 +65,10 @@
 				<a href={REPO_URL}>View source here!</a>
 			</p>
 		</div>
-		<!-- <div
-				class="w-[80px] h-[80px] rounded-full sm:w-[176px] sm:h-[136px] relative mb-8 sm:mb-0 mr-auto bg-cyan-300 bg-opacity-25"
-			/> -->
+		<img
+				class="w-[100px] h-[100px] rounded-full sm:w-[176px] sm:h-[176px] relative mb-8 sm:mb-0 mr-auto bg-cyan-300 bg-opacity-25"
+				src="/rupi.jpeg" alt="Rupi" 
+			/>
 	</div>
 
 	<section class="w-full mb-16">

@@ -74,7 +74,7 @@
 
 <section class="flex flex-col items-start justify-center max-w-2xl px-4 mx-auto mb-16 sm:px-8">
 	<h1 class="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-		Blog
+		Thoughts
 	</h1>
 	<p class="mb-4 text-gray-600 dark:text-gray-400">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sunt reprehenderit alias rerum

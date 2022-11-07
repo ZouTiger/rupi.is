@@ -1,4 +1,4 @@
-# Rupi Singh
+# Projects
 
 A lightly opinionated starter for SvelteKit blogs:
 

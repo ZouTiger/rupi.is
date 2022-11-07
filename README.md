@@ -1,5 +1,10 @@
 # SwyxKit
 
+<!-- TODO: 1 -->
+<!-- FIXME: 2 -->
+<!-- BUG: 3 -->
+<!-- NOTE: 4 -->
+
 A lightly opinionated starter for SvelteKit blogs:
 
 - Tailwind 3 + Tailwind Typography (with [swyx fixes](https://youtu.be/-FzemNMcOGs))
@@ -72,7 +77,6 @@ See https://swyxkit.netlify.app/ (see [Deploy Logs](https://app.netlify.com/site
   - [Nightly lockfile upgrades](https://mobile.twitter.com/FredKSchott/status/1489287560387956736)
   - Design system sandbox/"Storybook" setup:
     - `npm run story:dev` to view it on http://localhost:6006/. This is also included in your `npm start` command.
-
 
 This is a partial implementation of https://www.swyx.io/the-surprisingly-high-table-stakes-of-modern-blogs/
 

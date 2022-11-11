@@ -32,6 +32,7 @@
 				<p class="">{ghMetadata.reactions.total_count} ♥</p>
 			{/if}
 			<!-- comment this in if you have multiple categories -->
+			<!-- Colors can be changed below for the category -->
 			<button class="px-4 capitalize bg-gray-200 rounded-xl dark:bg-gray-700 dark:text-gray-400"
 				>{item?.category || 'blog'}</button
 			>

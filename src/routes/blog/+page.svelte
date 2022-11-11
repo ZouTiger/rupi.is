@@ -148,7 +148,8 @@
 		<ul class="">
 			{#each list as item}
 				<li class="mb-8 text-lg">
-					<!-- <code class="mr-4">{item.data.date}</code> -->
+					<!-- Comment out line below to remove the date -->
+					<code class="mr-4">{item.date}</code> 
 					<IndexCard
 						href={item.slug}
 						title={item.title}

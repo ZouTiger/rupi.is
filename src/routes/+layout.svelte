@@ -2,6 +2,7 @@
 	import '../tailwind.css';
 	import Nav from '../components/Nav.svelte';
 	import { MY_TWITTER_HANDLE, MY_YOUTUBE, REPO_URL, SITE_TITLE } from '$lib/siteConfig';
+	let year = new Date().getFullYear();
 </script>
 
 <svelte:head>
@@ -59,8 +60,6 @@
 		</div>
 	</div>
 	<p class="prose px-4 dark:prose-invert sm:px-8">
-		This blog is based on the
-		<a href="https://swyxkit.netlify.app/">swyxkit</a>
-		template.
+		© {year} Rupi Singh - All rights reserved
 	</p>
 </footer>

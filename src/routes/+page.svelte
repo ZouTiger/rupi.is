@@ -48,7 +48,9 @@
 				<span
 					class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"
 				>
+				<a href="https://twitter.com/rupijs" class="hover:no-underline">
 					<span class="relative text-yellow-400 skew-y-3">@rupijs</span>
+				</a>
 				</span>
 				Singh
 				!

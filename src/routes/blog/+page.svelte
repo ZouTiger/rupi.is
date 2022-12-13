@@ -149,12 +149,13 @@
 			{#each list as item}
 				<li class="mb-8 text-lg">
 					<!-- Comment out line below to remove the date -->
-					<code class="mr-4">{item.date}</code> 
+					<!-- <code class="mr-4 text-black" >{item.date}</code>  -->
 					<IndexCard
 						href={item.slug}
 						title={item.title}
 						stringData={new Date(item.date).toISOString().slice(0, 10)}
 						ghMetadata={item.ghMetadata}
+						category={item.category}
 						{item}
 					>
 						{item.description}

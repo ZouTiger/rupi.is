@@ -33,6 +33,12 @@
 			{/if}
 			<!-- comment this in if you have multiple categories -->
 			<!-- Colors can be changed below for the category -->
+			{#if item?.category == 'essay'}
+				<button class="px-4 capitalize bg-blue-100 rounded-xl dark:bg-gray-700 dark:text-gray-400"
+					>{item?.category}</button
+				>
+			{/if}
+			
 			<button class="px-4 capitalize bg-gray-200 rounded-xl dark:bg-gray-700 dark:text-gray-400"
 				>{item?.category || 'blog'}</button
 			>

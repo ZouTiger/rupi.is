@@ -126,13 +126,13 @@
 		<h3 class="mt-8 mb-4 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
 			Most Popular
 		</h3>
-		<IndexCard href="/foo" title="Hardcoded Blogpost # 1" stringData="106,255 views">
+		<IndexCard href="/foo" title="Hardcoded Blogpost # 1" stringData="106,255 views" category="essay">
 			Just a hardcorded blogpost or you can use the metadata up to you
 		</IndexCard>
-		<IndexCard href="/welcome" title="Welcome to Swyxkit" stringData="106,255 views">
+		<IndexCard href="/welcome" title="Welcome to Swyxkit" stringData="106,255 views" category="essay">
 			Just a hardcorded blogpost or you can use the metadata up to you
 		</IndexCard>
-		<IndexCard href="/moo" title="Hardcoded Blogpost # 3" stringData="106,255 views">
+		<IndexCard href="/moo" title="Hardcoded Blogpost # 3" stringData="106,255 views" category="essay">
 			Just a hardcorded blogpost or you can use the metadata up to you
 		</IndexCard>
 
@@ -151,6 +151,7 @@
 						title={item.title}
 						stringData={new Date(item.date).toISOString().slice(0, 10)}
 						ghMetadata={item.ghMetadata}
+						category={item.category}
 					>
 						{item.description}
 					</IndexCard>

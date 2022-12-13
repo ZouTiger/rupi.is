@@ -3,6 +3,7 @@
 	export let href = '#';
 	/** @type {import('$lib/types').ContentItem} */
 	export let item = undefined;
+	export let category;
 	/** @type {import('$lib/types').GHMetadata} */
 	export let ghMetadata = null;
 	export let title = 'Untitled post';
@@ -34,14 +35,24 @@
 			<!-- comment this in if you have multiple categories -->
 			<!-- Colors can be changed below for the category -->
 			{#if item?.category == 'essay'}
-				<button class="px-4 capitalize bg-blue-100 rounded-xl dark:bg-gray-700 dark:text-gray-400"
+				<button class="px-4 capitalize bg-blue-200 rounded-xl dark:bg-gray-700 dark:text-gray-400"
 					>{item?.category}</button
 				>
+				<!-- The below is to account for styling the category - 'Essay' in Most Popular -->
+				{:else if category == 'essay'}
+				<button class="px-4 capitalize bg-blue-200 rounded-xl dark:bg-gray-700 dark:text-gray-400"
+					>{category || 'essay'}</button
+				>
+			{:else if item?.category == 'blog'}
+				<button class="px-4 capitalize bg-orange-200 rounded-xl dark:bg-gray-700 dark:text-gray-400"
+					>{item?.category || 'blog'}</button
+				>
+			{:else}
+			<button class="px-4 capitalize bg-gray-200 rounded-xl dark:bg-gray-700 dark:text-gray-400"
+				>{category || 'blog'}</button
+			>
 			{/if}
 			
-			<button class="px-4 capitalize bg-gray-200 rounded-xl dark:bg-gray-700 dark:text-gray-400"
-				>{item?.category || 'blog'}</button
-			>
 		</div>
 	</div></a
 >

@@ -38,9 +38,10 @@
 		<li>
 			<NavLink href="/blog">Thoughts</NavLink>
 		</li>
-		<li>
+		<!-- TODO: add projects back in by uncommenting the lines below once it is time -->
+		<!-- <li>
 			<NavLink href="/projects">Projects</NavLink>
-		</li>
+		</li> -->
 		<li>
 			<NavLink href="/about">About</NavLink>
 		</li>

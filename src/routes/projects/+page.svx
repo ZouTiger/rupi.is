@@ -1,5 +1,7 @@
 # Projects
 
+This is part of 'projects' branch. I can add that back in once I have projects live.
+
 A lightly opinionated starter for SvelteKit blogs:
 
 - Tailwind 3 + Tailwind Typography (with [swyx fixes](https://youtu.be/-FzemNMcOGs))

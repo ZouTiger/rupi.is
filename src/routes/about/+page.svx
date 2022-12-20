@@ -27,7 +27,7 @@ See https://swyxkit.netlify.app/ (see [Deploy Logs](https://app.netlify.com/site
 - https://twitter.com/Codydearkland/status/1503822866969595904
 - add yourself here!
 
-## Key Features and Design Considerations:
+## W:
 
 - **Features**
   - Dark mode

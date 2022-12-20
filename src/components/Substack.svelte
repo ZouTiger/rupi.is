@@ -12,7 +12,7 @@
 
 <section class="mb-16 w-full" id="newsletter">
 	<div
-		class="my-4 w-full border-y border-blue-200 bg-blue-50 p-6 dark:border-gray-600 dark:bg-gray-800 sm:rounded sm:border-x items"
+		class="my-4 w-full border-y border-gray-300 bg-gray-50 p-6 dark:border-gray-600 dark:bg-gray-900 sm:rounded sm:border-x items"
 	>
 		<div class="flex items-center pb-4 justify-between space-x-4 text-gray-900 dark:text-gray-100">
 			<p class="text-lg font-bold md:text-xl">Subscribe to the newsletter</p>

@@ -14,6 +14,8 @@
 	/>
 </svelte:head>
 
+<!-- TODO: Remove links from footer here -->
+
 <div class="flex flex-col justify-center bg-gray-50 px-4 dark:bg-gray-900 sm:px-8">
 	<Nav />
 </div>
@@ -27,7 +29,8 @@
 		<div class="flex flex-col space-y-4">
 			<a class="text-gray-500 transition hover:text-gray-300" href="/">Home</a>
 			<a class="text-gray-500 transition hover:text-gray-300" href="/about">About</a>
-			<a class="text-gray-500 transition hover:text-gray-300" href="/#newsletter">Newsletter</a>
+			<a class="text-gray-500 transition hover:text-gray-300" href="/blog">Thoughts</a>
+			<!-- <a class="text-gray-500 transition hover:text-gray-300" href="/#newsletter">Newsletter</a> -->
 			<a class="text-gray-500 transition hover:text-gray-300" href="/rss.xml" rel="external">
 				RSS
 			</a>
@@ -49,14 +52,14 @@
 			>
 				GitHub
 			</a>
-			<a
+			<!-- <a
 				class="text-gray-500 transition hover:text-gray-300"
 				target="_blank"
 				rel="noopener noreferrer"
 				href={MY_YOUTUBE}
 			>
 				YouTube
-			</a>
+			</a> -->
 		</div>
 	</div>
 	<p class="prose px-4 dark:prose-invert sm:px-8">

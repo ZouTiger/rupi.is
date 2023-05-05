@@ -83,13 +83,13 @@
 <svelte:window on:keyup={focusSearch} />
 
 <section class="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center px-4 sm:px-8">
-	<h1 class="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-		{SITE_TITLE} Blog
+	<h1 class="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
+		<!-- {SITE_TITLE} Blog -->
+		My Thoughts
 	</h1>
 	<p class="mb-4 text-gray-600 dark:text-gray-400">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sunt reprehenderit alias rerum
-		dolor impedit. In total, I've written {items.length} articles on my blog. Use the search below to
-		filter by title.
+		In total, I've written {items.length} articles on my blog. Use the search below to
+		filter by title. You can also click on the filter below to see articles by type.
 	</p>
 	<div class="relative mb-4 w-full">
 		<input
@@ -119,7 +119,8 @@
 	{#if POST_CATEGORIES.length > 1}
 		<div class="mt-2 mb-8 flex items-center">
 			<div class="mr-2 text-gray-900 dark:text-gray-400">Filter:</div>
-			<div class="grid grid-cols-2 rounded-md shadow-sm sm:grid-cols-2">
+			<!-- <div class="grid grid-cols-6 rounded-md shadow-sm"> -->
+			<div class="flex rounded-md shadow-sm flex-grow">
 				{#each POST_CATEGORIES as availableCategory}
 					<div>
 						<input
@@ -131,7 +132,7 @@
 						/>
 						<label
 							for="category-{availableCategory}"
-							class="inline-flex w-full cursor-pointer items-center justify-between border border-gray-200 bg-white px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-purple-600 peer-checked:text-purple-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:peer-checked:text-purple-500"
+							class="inline-flex w-full cursor-pointer items-center justify-center border border-gray-200 bg-white px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-purple-600 peer-checked:text-purple-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:peer-checked:text-purple-500"
 						>
 							{availableCategory}
 						</label>

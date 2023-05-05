@@ -1,14 +1,15 @@
 import { SITE_URL } from '$lib/siteConfig';
 import { listContent } from '$lib/content';
 
-export async function GET() {
-	const posts = await listContent();
+/** @type {import('@sveltejs/kit').RequestHandler} */
+export async function GET({ fetch }) {
+  const posts = await listContent(fetch);
 	const pages = [`about`];
 	const body = sitemap(posts, pages);
 
 	return new Response(body, {
 		headers: {
-			'Cache-Control': `max-age=0, s-maxage=${3600}`,
+      'Cache-Control': `public, max-age=${86400}`, // 24 hours
 			'Content-Type': 'application/xml'
 		}
 	});

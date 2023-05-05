@@ -16,6 +16,5 @@ export const GH_PUBLISHED_TAGS = ['Published'];
 export const REPO_URL = 'https://github.com/' + GH_USER_REPO;
 export const REPO_OWNER = GH_USER_REPO.split('/')[0];
 
-// dont forget process.env.GH_TOKEN - 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
 // if supplied, raises rate limit from 60 to 5000
 // https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting

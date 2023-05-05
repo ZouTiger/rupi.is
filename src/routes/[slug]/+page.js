@@ -1,18 +1,30 @@
 import { error } from '@sveltejs/kit';
 import { REPO_URL } from '$lib/siteConfig';
-export const csr = true; // https://github.com/sveltejs/kit/pull/6446
+
+// we choose NOT to prerender blog pages because it is easier to edit and see changes immediately
+// instead we set cache control headers
+// export const prerender = true
+
+
+/** @type {import('./$types').PageLoad} */
 export async function load({ params, fetch, setHeaders }) {
 	const slug = params.slug;
-	let res = null;
-	res = await fetch(`/api/blog/${slug}.json`);
-	if (res.status > 400) {
-		throw error(res.status, await res.text());
+	let [pageData, listData] = await Promise.all([
+		fetch(`/api/blog/${slug}.json`),
+		fetch(`/api/listContent.json`)
+	])
+	if (pageData.status > 400) {
+		throw error(pageData.status, await pageData.text());
+	}
+	if (listData.status > 400) {
+		throw error(listData.status, await listData.text());
 	}
 	setHeaders({
-		'cache-control': 'public, max-age=60'
+		'cache-control': 'public, max-age=3600' // 1 hour - increase the max age as you get more confident in your caching
 	});
 	return {
-		json: await res.json(),
+		json: await pageData.json(),
+		list: (await listData.json()).slice(0, 10),
 		slug,
 		REPO_URL
 	};

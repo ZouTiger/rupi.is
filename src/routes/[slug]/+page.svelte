@@ -91,7 +91,11 @@
 	<div
 		class="-mx-4 my-2 flex h-1 w-[100vw] bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 sm:mx-0 sm:w-full"
 	/>
+	{#if json.image}
+	<img src={json.image} alt={json.title} class="my-4 mx-auto" />
+	{/if}
 	{@html json.content}
+
 </article>
 
 <div class="max-w-2xl mx-auto">

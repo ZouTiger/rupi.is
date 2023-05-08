@@ -67,12 +67,13 @@
 		"vite": "^4.1.4"
 	},
 	"engines": {
-		"node": ">=16.14"
+		"node": ">=18.16"
 	},
 	"type": "module",
 	"dependencies": {
 		"@leeoniya/ufuzzy": "^1.0.5",
 		"date-fns": "^2.29.3",
+		"node-fetch": "^3.3.1",
 		"parse-link-header": "^2.0.0",
 		"prism-themes": "^1.9.0",
 		"remark": "^14.0.2",

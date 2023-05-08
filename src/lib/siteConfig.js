@@ -1,14 +1,12 @@
-export const SITE_URL = 'https://swyxkit.netlify.app';
+export const SITE_URL = 'https://rupi.is';
 export const APPROVED_POSTERS_GH_USERNAME = ['ZouTiger'];
-// export const GH_USER_REPO = 'sw-yx/swyxdotio';
-// export const GH_USER_REPO = 'sw-yx/swyxkit'; // used for pulling github issues and offering comments
-export const GH_USER_REPO = 'ZouTiger/rupi.is'; // Rupi's
+export const GH_USER_REPO = 'ZouTiger/rupi.is'; // used for pulling github issues and offering comments
 export const SITE_TITLE = 'Rupi';
 export const SITE_DESCRIPTION = "Rupi's Personal Site";
 export const DEFAULT_OG_IMAGE =
 	'https://user-images.githubusercontent.com/6764957/147861359-3ad9438f-41d1-47c8-aa05-95c7d18497f0.png';
 export const MY_TWITTER_HANDLE = 'rupijs';
-export const MY_YOUTUBE = 'https://youtube.com/swyxTV';
+export const MY_YOUTUBE = 'https://youtube.com/';
 export const POST_CATEGORIES = ['Essays', 'WIP', 'Failures', 'Notes']; // Other categories you can consider adding: Talks, Tutorials, Snippets, Podcasts, Notes...
 export const GH_PUBLISHED_TAGS = ['Published'];
 

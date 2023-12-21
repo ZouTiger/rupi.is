@@ -6,8 +6,8 @@
 	let year = new Date().getFullYear();
 </script>
 
-<Analytics />
 <svelte:head>
+	<Analytics />
 	<link
 		rel="alternate"
 		type="application/rss+xml"

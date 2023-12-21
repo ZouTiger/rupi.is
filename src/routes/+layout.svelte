@@ -6,6 +6,7 @@
 	let year = new Date().getFullYear();
 </script>
 
+<Analytics />
 <svelte:head>
 	<link
 		rel="alternate"

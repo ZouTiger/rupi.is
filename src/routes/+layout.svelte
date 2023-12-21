@@ -1,5 +1,6 @@
 <script>
 	import '../tailwind.css';
+	import Analytics from '$lib/analytics.svelte';
 	import Nav from '../components/Nav.svelte';
 	import { MY_TWITTER_HANDLE, MY_YOUTUBE, REPO_URL, SITE_TITLE } from '$lib/siteConfig';
 	let year = new Date().getFullYear();

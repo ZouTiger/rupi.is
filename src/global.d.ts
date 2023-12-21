@@ -8,3 +8,9 @@ declare namespace App {
 	// interface PageData {}
 	// interface Platform {}
 }
+
+
+interface Window {
+  dataLayer: any[];
+}
+

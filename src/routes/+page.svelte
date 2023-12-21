@@ -72,7 +72,8 @@
 			Featured Posts
 		</h3>
 		<div class="flex flex-col gap-6 md:flex-row">
-			<FeatureCard title="Start here!" href="/welcome" stringData="Jan 2022" />
+			<FeatureCard title="Start here!" href="/about" stringData="Dec 2023" />
+			<FeatureCard title="Why I write" href="/why-i-write-1" stringData="Dec 2023" />
 			<!-- <FeatureCard
 				title="Moving to a GitHub CMS"
 				href="/moving-to-a-github-cms"

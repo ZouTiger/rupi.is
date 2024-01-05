@@ -254,7 +254,6 @@ function parseIssue(issue) {
 	/** @type {string[]} */
 	let tags = [];
 	if (data.tags) tags = Array.isArray(data.tags) ? data.tags : data.tags.split(',').map(x => x.trim());
-
 	return {
 		type: 'blog', // futureproof in case you want to add other types of content
 		content,
@@ -262,6 +261,7 @@ function parseIssue(issue) {
 		title,
 		subtitle: data.subtitle,
 		description,
+		updatedOn: data.updatedOn,
 		category: data.category?.toLowerCase() || 'note', // all posts assumed to be "note"s unless otherwise specified
 		tags,
 		image: data.image ?? data.cover_image,

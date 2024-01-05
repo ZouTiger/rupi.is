@@ -71,6 +71,17 @@
 
 <TableOfContents {tocStore} />
 
+<div class="max-w-2xl mx-auto">
+	{#if json.updatedOn}
+		<p class="!text-slate-400 flex-auto mb-4 italic">
+			This was last updated on: 
+			<span class="px-1">
+				{new Date(json.updatedOn).toISOString().slice(0, 10)}
+			</span>
+		</p>
+	{/if}
+</div>
+
 <article use:toc={{ store: tocStore, anchor: false, observe: true, selector: ':where(h1, h2, h3)' }} class="items-start justify-center w-full mx-auto mt-16 mb-32 prose swyxcontent dark:prose-invert max-w-none">
 	<h1 class="md:text-center mb-8 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl ">
 		{json.title}
@@ -89,12 +100,13 @@
 		</p>
 	</div>
 	<div
-		class="-mx-4 my-2 flex h-1 w-[100vw] bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 sm:mx-0 sm:w-full"
+	class="-mx-4 my-2 flex h-1 w-[100vw] bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 sm:mx-0 sm:w-full"
 	/>
 	{#if json.image}
 	<img src={json.image} alt={json.title} class="my-4 mx-auto" />
 	{/if}
 	{@html json.content}
+	
 
 </article>
 

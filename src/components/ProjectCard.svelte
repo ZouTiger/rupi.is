@@ -2,13 +2,15 @@
 	export let title = 'Untitled project';
 	export let href = '#';
 	export let description = 'No description available';
+	
+	// Check if it's an internal link
+	$: isInternal = href.startsWith('/');
 </script>
 
 <a
 	class="w-full transform rounded-xl bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 p-1 transition-all hover:scale-[1.01] md:w-1/3 group"
 	{href}
-	target="_blank"
-	rel="noopener noreferrer"
+	{...isInternal ? {} : { target: '_blank', rel: 'noopener noreferrer' }}
 	><div class="flex h-full flex-col justify-between rounded-lg bg-white p-4 dark:bg-gray-900 relative overflow-hidden">
 		<div class="flex flex-col justify-between md:flex-row">
 			<h4

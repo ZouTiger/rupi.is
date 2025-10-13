@@ -147,9 +147,13 @@
 	}
 
 	.menuRendered li {
-		@apply w-full border-gray-200 dark:border-gray-600;
+		width: 100%;
+		border-color: rgb(229 231 235);
 		transform: translateX(0);
 		opacity: 1;
+	}
+	:global(.dark) .menuRendered li {
+		border-color: rgb(75 85 99);
 	}
 
 	.menu > * + * {

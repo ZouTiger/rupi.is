@@ -1,0 +1,63 @@
+---
+title: 'Geck AI'
+description: 'AI Testing that Keeps Pace with AI Coding'
+---
+
+<script>
+  import { SITE_URL } from '$lib/siteConfig';
+</script>
+
+<svelte:head>
+  <title>Geck AI - AI Testing that Keeps Pace with AI Coding</title>
+  <meta name="description" content="AI Testing that Keeps Pace with AI Coding" />
+  <link rel="canonical" href="{SITE_URL}/geck-ai" />
+</svelte:head>
+
+# Geck AI 
+
+## AI Testing that Keeps Pace with AI Coding
+
+<div class="flex justify-center my-8">
+  <a 
+    href="https://geck.ai" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-lg hover:opacity-90 transition-opacity"
+  >
+    Visit Geck AI →
+  </a>
+</div>
+
+## Origin Story
+
+I've been building web projects for over a decade, and I've always hated testing. When AI coding agents arrived, I thought my problems were solved. I was shipping features 10x faster, but I was also spending even more time testing. The agents weren’t perfect, and I found myself constantly clicking through browsers, checking links, verifying forms, and debugging issues that shouldn’t exist.
+
+That was the starting point for Geck AI. If AI can code 10x faster, it should be able to test 10x faster too.
+
+## What is Geck AI?
+
+Geck AI is an AI-powered testing tool that lives directly in your IDE. Instead of writing traditional test code or manually clicking through your app in a browser, you simply describe what should work in plain English, like "user can checkout with a credit card," and Geck handles the rest. It creates the tests, runs them automatically while you code, and even self-heals when your UI changes. 
+
+Geck brings your testing up to speed with modern AI-assisted development so that the bottleneck moves back to where it belongs, your ideas, not your test suite.
+
+## Key Features
+
+**Plain English Test Creation**  
+Write tests the way you think about them: "user can log in" or "checkout flow works with invalid card." No Selenium, no CSS selectors, no test framework syntax. Just describe what matters.
+
+**Self-Healing Tests**  
+When you change a button’s text, move a form field, or redesign a page, your tests automatically adapt. No more spending hours fixing broken tests after minor UI updates.
+
+**IDE-Native Testing**  
+Never leave VS Code or Cursor. Tests run in the background while you keep coding. See results instantly without context-switching to browsers or external tools.
+
+**Visual Debugging**  
+Screenshots at every step show exactly what happened during test runs. When something fails, you see it. No guessing what went wrong.
+
+## Why Geck AI?
+
+Before Geck, I was spending 30 to 40 percent of my time manually verifying that things worked. I wasn’t writing code or designing new features, just clicking buttons in Chrome like it was 2010. With AI coding agents, I was building faster than ever, but testing could not keep up.
+
+Geck AI helps me stay in flow. I describe what should work, it verifies that it is working, and I keep building. When I change something, the tests adapt automatically instead of breaking. 
+
+What started as a personal time-saver turned into something I knew other developers needed. If you are coding with AI but still testing like it is the old days, Geck AI is the missing piece.

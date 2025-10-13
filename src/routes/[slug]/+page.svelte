@@ -100,7 +100,7 @@
 	</div>
 	<div
 	class="-mx-4 my-2 flex h-1 w-[100vw] bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 sm:mx-0 sm:w-full"
-	/>
+	></div>
 	{#if json.image}
 	<img src={json.image} alt={json.title} class="my-4 mx-auto" />
 	{/if}
@@ -204,7 +204,9 @@
 	}
 
 	article :global(.admonition) {
-		@apply p-8 border-4 border-red-500;
+		padding: 2rem;
+		border-width: 4px;
+		border-color: rgb(239 68 68);
 	}
 
 	/* fix github codefence diff styling from our chosen prismjs theme */

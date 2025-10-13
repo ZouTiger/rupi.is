@@ -1,0 +1,62 @@
+---
+title: 'StartupChai'
+description: 'Brewing Fresh Perspectives on Desi Startups'
+---
+
+<script>
+  import { SITE_URL } from '$lib/siteConfig';
+</script>
+
+<svelte:head>
+  <title>StartupChai - Brewing Fresh Perspectives on Desi Startups</title>
+  <meta name="description" content="Brewing Fresh Perspectives on Desi Startups" />
+  <link rel="canonical" href="{SITE_URL}/startupchai" />
+</svelte:head>
+
+# StartupChai
+
+## Brewing Fresh Perspectives on Desi Startups
+
+<div class="flex justify-center my-8">
+  <a 
+    href="https://startupchai.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-lg hover:opacity-90 transition-opacity"
+  >
+    Visit StartupChai →
+  </a>
+</div>
+
+StartupChai is your go-to source for insights, stories, and analysis of the South Asian startup ecosystem. Like a warm cup of chai, we bring together entrepreneurs, investors, and innovators for meaningful conversations about building the future.
+
+### What is StartupChai?
+
+StartupChai is a platform dedicated to showcasing and analyzing the vibrant startup ecosystem in South Asia. We share stories, insights, and perspectives that matter to founders, investors, and anyone interested in the desi startup scene.
+
+### Origin Story
+StartupChai began as a side project during my morning chai breaks. I’d read about Indian startups every day, but the coverage always felt fragmented: funding announcements without context or stories that missed the real journey. I started summarizing the day’s startup news for myself, just to stay informed. 
+
+Around the same time, my long-time collaborator, who has been my analyst and investing partner for years, joined in. We had already spent countless hours discussing startups, making investments, and debating what really made a company work. Writing together felt natural.
+
+What began as our way of organizing notes and sharing insights slowly turned into something larger, a daily ritual that others wanted to be part of. Friends started reading, then founders, then investors. It has grown into a community that values the same things we do: clarity, context, and conversation about Indian startups without the noise.
+
+### What We Cover
+
+- **Founder Stories**: In-depth interviews with entrepreneurs building innovative companies
+- **Market Analysis**: Deep dives into emerging trends and opportunities
+- **Funding Insights**: Coverage of investment rounds, VC trends, and funding strategies
+- **Community Building**: Connecting the South Asian startup ecosystem globally
+
+### Why StartupChai?
+
+The South Asian startup ecosystem is one of the fastest-growing in the world, yet it often lacks the spotlight it deserves. StartupChai brings these stories to a global audience, celebrating successes, learning from failures, and fostering connections across the community.
+
+### Our Mission
+
+To amplify voices from the South Asian startup ecosystem and provide valuable insights that help founders, investors, and enthusiasts make better decisions.
+
+### Join the Community
+
+Whether you're building a startup in Mumbai, investing from Silicon Valley, or simply passionate about the ecosystem, StartupChai is your platform for connection and knowledge.
+

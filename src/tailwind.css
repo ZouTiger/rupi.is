@@ -1,8 +1,14 @@
 @import '@fontsource/fira-mono';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
+@source '../src';
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--color-brand-accent: #facc15;
+}
 
 :root {
 	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
@@ -102,7 +108,17 @@ pre {
 }
 /* bg-yellow-200 dark:hover:bg-yellow-800 */
 a {
-	@apply text-yellow-700 hover:text-yellow-700 hover:underline dark:text-yellow-400 dark:hover:text-yellow-200;
+	color: rgb(0 0 0);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.dark a {
+	color: rgb(250 204 21);
+}
+.dark a:hover {
+	color: rgb(254 240 138);
 }
 
 /* for the super long github links i drop */
@@ -117,7 +133,15 @@ h5 a,
 h6 a {
 	/* margin-left: 1rem; */
 	text-decoration: none !important;
-	@apply text-orange-700 dark:text-orange-400;
+	color: rgb(194 65 12);
+}
+.dark article.prose h1 a,
+.dark h2 a,
+.dark h3 a,
+.dark h4 a,
+.dark h5 a,
+.dark h6 a {
+	color: rgb(251 146 60);
 }
 article.prose h2::before {
 	content: '## ';

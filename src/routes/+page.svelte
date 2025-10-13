@@ -49,7 +49,7 @@
 				Singh!
 			</h1>
 			<h2 class="mb-4 text-gray-700 dark:text-gray-200">
-				Navigating the curious adventure of life, startups, and angel investing!
+				Turning ideas into tools that move people from potential to reality.
 			</h2>
 		</div>
 		<!-- <div
@@ -68,17 +68,17 @@
 		<div class="flex flex-col gap-6 md:flex-row">
 			<ProjectCard 
 				title="Geck AI" 
-				href="https://geck.ai" 
+				href="/geck-ai" 
 				description="AI Testing that Keeps Pace with AI Coding" 
 			/>
 			<ProjectCard 
 				title="Nottu AI" 
-				href="https://nottu.ai" 
+				href="/nottu-ai" 
 				description="AI Powered Study Assistant" 
 			/>
 			<ProjectCard 
 				title="StartupChai" 
-				href="https://startupchai.com" 
+				href="/startupchai" 
 				description="Brewing Fresh Perspectives on Desi Startups" 
 			/>
 		</div>

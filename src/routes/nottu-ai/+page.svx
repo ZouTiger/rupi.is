@@ -1,0 +1,63 @@
+---
+title: 'Nottu AI'
+description: 'Smart lecture recording, notes, flashcards & mock tests'
+---
+
+<script>
+  import { SITE_URL } from '$lib/siteConfig';
+</script>
+
+<svelte:head>
+  <title>Nottu AI – smart lecture tools for students, educators & parents</title>
+  <meta name="description" content="Smart lecture recording, notes, flashcards & mock tests" />
+  <link rel="canonical" href="{SITE_URL}/nottu-ai" />
+</svelte:head>
+
+# Nottu AI
+
+## Turn lectures into learning tools 
+
+<div class="flex justify-center my-8">
+  <a 
+    href="https://nottu.ai" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="inline-block px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 rounded-lg hover:opacity-90 transition-opacity"
+  >
+    Visit Nottu AI →
+  </a>
+</div>
+
+## Origin Story
+
+I was inspired to build Nottu when my son broke his arm and couldn’t take notes in school. Watching him struggle to keep up during class made me realize how outdated lecture capture and note taking is for many students. I believed there had to be a better way.  
+
+Lecture content is rich, but translating it into usable study material is still manual, slow, and error-prone. Nottu exists to change that.  
+
+## What is Nottu AI?
+
+Nottu AI is a tool that turns any lecture into clean, structured learning materials. You record a lecture, and Nottu transforms it into readable notes, smart summaries, flashcards, and mock tests.  
+
+Educators can use it to share transcripts and quizzes. Students can review class sessions effortlessly. Parents can use it to support learning at home.  
+
+## Core Features
+
+**Automatic Transcripts & Summaries**  
+Record in your classroom, lecture hall, or from online classes, and receive editable transcripts along with concise summaries.
+
+**Flashcards & Mock Tests**  
+Instantly convert lecture content into flashcards and practice quizzes — no extra effort.
+
+**Collaborate & Share**  
+Educators can distribute notes and quizzes; students can share and study together.
+
+**Adaptive Reminders**  
+Smart prompts based on your learning rhythm so you review more effectively without feeling nagged.
+
+## Why Nottu AI?
+
+My son needed help capturing what was being said in class. The knowledge was there, but access was missing. Traditional methods of note taking rely entirely on a student’s speed, dexterity, or attention, which leaves many learners behind.
+
+Nottu steps in to fill this gap. You don’t lose time copying or rewriting. You engage with ideas. You test yourself. You share and learn together. Nottu turns passive listening into active learning.
+
+If you are a student, educator, or parent trying to bridge the gap between lectures and retention, Nottu is the tool you’ve been waiting for.

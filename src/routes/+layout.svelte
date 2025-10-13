@@ -25,33 +25,39 @@
 	<slot />
 </main>
 
-<footer class="mx-auto mb-8 flex w-full max-w-2xl flex-col items-start justify-center bg-gray-50 dark:bg-gray-900">
-	<hr class="border-1 mb-8 w-full border-gray-200 dark:border-gray-800" />
-	<div class="grid w-full max-w-2xl grid-cols-1 gap-4 px-4 pb-16 sm:grid-cols-2 sm:px-8">
-		<div class="flex flex-col space-y-4">
-			<a class="text-gray-500 transition hover:text-gray-300" href="/">Home</a>
-			<a class="text-gray-500 transition hover:text-gray-300" href="/about">About</a>
+<div class="flex flex-col justify-center bg-gray-50 px-4 dark:bg-gray-900 sm:px-8">
+	<footer class="mx-auto mb-8 flex w-full max-w-2xl flex-col items-start justify-center">
+		<hr class="border-1 mb-8 w-full border-gray-200 dark:border-gray-800" />
+		<div class="grid w-full max-w-2xl grid-cols-1 gap-4 pb-16 sm:grid-cols-2">
+			<div class="flex flex-col space-y-4">
+				<a class="text-gray-500 transition hover:text-gray-300" href="/">Home</a>
+			</div>
+			<div class="flex flex-col space-y-4">
+				<a
+					class="text-gray-500 transition hover:text-gray-300"
+					target="_blank"
+					rel="noopener noreferrer"
+					href={'https://twitter.com/intent/follow?screen_name=' + MY_TWITTER_HANDLE}
+				>
+					Twitter
+				</a>
+			</div>
+			<div class="flex flex-col space-y-4">
+				<a class="text-gray-500 transition hover:text-gray-300" href="/about">About</a>
+			</div>
+			<div class="flex flex-col space-y-4">
+				<a
+					class="text-gray-500 transition hover:text-gray-300"
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://www.linkedin.com/in/rupijsingh/"
+				>
+					LinkedIn
+				</a>
+			</div>
 		</div>
-		<div class="flex flex-col space-y-4">
-			<a
-				class="text-gray-500 transition hover:text-gray-300"
-				target="_blank"
-				rel="noopener noreferrer"
-				href={'https://twitter.com/intent/follow?screen_name=' + MY_TWITTER_HANDLE}
-			>
-				Twitter
-			</a>
-			<a
-				class="text-gray-500 transition hover:text-gray-300"
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://www.linkedin.com/in/rupijsingh/"
-			>
-				LinkedIn
-			</a>
-		</div>
-	</div>
-	<p class="prose px-4 dark:prose-invert sm:px-8">
-		© {year} Rupi Singh - All rights reserved
-	</p>
-</footer>
+		<p class="prose dark:prose-invert">
+			© {year} Rupi Singh - All rights reserved
+		</p>
+	</footer>
+</div>

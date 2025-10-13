@@ -16,7 +16,6 @@
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
 		"@playwright/test": "^1.31.2",
-		"@svelte-put/toc": "^3.0.2",
 		"@sveltejs/adapter-auto": "^6.1.1",
 		"@sveltejs/adapter-netlify": "^5.2.4",
 		"@sveltejs/kit": "^2.46.5",

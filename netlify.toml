@@ -12,9 +12,9 @@
   external_node_modules = ["mdsvex"]
 
 [build.environment]
-  NODE_VERSION = "18" 
-  ## as of v0.334 sveltekit requires node 16 https://github.com/sveltejs/kit/pull/4922
-  ## https://github.com/sveltejs/kit/issues/2687
+  NODE_VERSION = "20" 
+  ## Updated to Node 20 for @sveltejs/vite-plugin-svelte@6.2.1 compatibility
+  ## Previous versions: v0.334 required node 16, but Svelte 5 requires Node 20+
 
 [[headers]]
   ## https://answers.netlify.com/t/content-type-header-not-working-in-netlify-toml/7718

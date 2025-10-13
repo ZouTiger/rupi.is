@@ -7,14 +7,7 @@
 	import Reactions from '../../components/Reactions.svelte';
 	import { page } from '$app/stores';
 
-
-	// https://svelte-put.vnphanquang.com/docs/toc
-  import { toc, createTocStore } from '@svelte-put/toc';
-	import TableOfContents from './TableOfContents.svelte';
 	import utterances, {injectScript}  from './loadUtterances'
-
-	// table of contennts
-  const tocStore = createTocStore();
 
 
 	/** @type {import('./$types').PageData} */
@@ -68,8 +61,6 @@
 	<meta name="twitter:image" content={image} />
 </svelte:head>
 
-<TableOfContents {tocStore} />
-
 <div class="max-w-2xl mx-auto">
 	{#if json.updatedOn}
 		<p class="!text-slate-400 flex-auto mb-4 italic">
@@ -81,7 +72,7 @@
 	{/if}
 </div>
 
-<article use:toc={{ store: tocStore, anchor: false, observe: true, selector: ':where(h1, h2, h3)' }} class="items-start justify-center w-full mx-auto mt-16 mb-32 prose swyxcontent dark:prose-invert max-w-none">
+<article class="items-start justify-center w-full mx-auto mt-16 mb-32 prose swyxcontent dark:prose-invert max-w-none">
 	<h1 class="md:text-center mb-8 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl ">
 		{json.title}
 	</h1>

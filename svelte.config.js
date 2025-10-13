@@ -6,11 +6,16 @@ import remarkAbbr from 'remark-abbr';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 // mdsvex config
 const mdsvexConfig = {
 	extensions: ['.svelte.md', '.md', '.svx'],
 	layout: {
-		_: './src/mdsvexlayout.svelte' // default mdsvex layout
+		_: resolve(__dirname, './src/mdsvexlayout.svelte') // default mdsvex layout
 	},
 	remarkPlugins: [
 		[

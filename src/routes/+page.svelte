@@ -1,8 +1,6 @@
 <script>
 	import Newsletter from '../components/Newsletter.svelte';
-	import FeatureCard from '../components/FeatureCard.svelte';
-	import LatestPosts from '../components/LatestPosts.svelte';
-	import Substack from '../components/Substack.svelte';
+	import ProjectCard from '../components/ProjectCard.svelte';
 	import {
 		SITE_URL,
 		REPO_URL,
@@ -13,11 +11,7 @@
 	} from '$lib/siteConfig';
 
 
-	/** @type {import('./$types').PageData} */
-	export let data;
-	// technically this is a slightly different type because doesn't have 'content' but we'll let it slide
-	/** @type {import('$lib/types').ContentItem[]} */
-	$: items = data.items;
+	// No data needed since we removed the blog section
 </script>
 
 <svelte:head>
@@ -69,22 +63,26 @@
 
 	<section class="w-full mb-16">
 		<h3 class="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
-			Featured Posts
+			Projects
 		</h3>
 		<div class="flex flex-col gap-6 md:flex-row">
-			<FeatureCard title="Start here!" href="/about" stringData="Dec 2023" />
-			<FeatureCard title="Why I write" href="/why-i-write-1" stringData="Dec 2023" />
-			<!-- <FeatureCard
-				title="Moving to a GitHub CMS"
-				href="/moving-to-a-github-cms"
-				stringData="Jan 2022"
+			<ProjectCard 
+				title="Geck AI" 
+				href="https://geck.ai" 
+				description="AI Testing that Keeps Pace with AI Coding" 
 			/>
-			<FeatureCard title="HTML Ipsum demo" href="/moo" stringData="Jan 2022" /> -->
+			<ProjectCard 
+				title="Nottu AI" 
+				href="https://nottu.ai" 
+				description="AI Powered Study Assistant" 
+			/>
+			<ProjectCard 
+				title="StartupChai" 
+				href="https://startupchai.com" 
+				description="Brewing Fresh Perspectives on Desi Startups" 
+			/>
 		</div>
 	</section>
 
-	<LatestPosts {items} />
 
-	<!-- <Newsletter /> -->
-	<Substack />
 </div>

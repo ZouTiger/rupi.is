@@ -13,6 +13,7 @@
 		message = 'Sorry! If you think this URL is broken, please let me know!';
 	}
 
+	/** @param {string} str */
 	function displayPathname(str) {
 		return decodeURIComponent(str).replaceAll('-', ' ');
 	}
@@ -36,7 +37,7 @@
 	{:else}
 		<p class="font-mono">{message}</p>
 	{/if}
-	{#if dev && $page.error.stack}
+	{#if dev && $page.error?.stack}
 		<pre class="mono overflow-scroll bg-gray-800 p-8">{$page.error.stack}</pre>
 	{/if}
 </section>

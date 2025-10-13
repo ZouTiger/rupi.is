@@ -7,7 +7,7 @@ export async function GET({ fetch, params }) {
 	const { slug } = params;
 	let data;
 	try {
-		data = await getContent(fetch, slug);
+		data = await getContent(fetch, slug || '');
 		return new Response(JSON.stringify(data), {
 			headers: {
 				'Cache-Control': `public, max-age=3600`, // 1 hour

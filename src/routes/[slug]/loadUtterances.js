@@ -11,6 +11,7 @@ let intersectionObserver;
 
 let hasLoaded = false
 
+/** @param {HTMLElement} element @param {string} number */
 export function injectScript(element, number) {
   // have to do this because direct injection using @html doesnt work
   // adapted from https://github.com/utterance/utterances/issues/161#issuecomment-550991248
@@ -29,6 +30,7 @@ export function injectScript(element, number) {
   element.appendChild(scriptElem);
 }
 
+/** @param {HTMLElement} element @param {{number: string}} params */
 export default function viewport(element, { number }) {
 
   function ensureIntersectionObserver() {

@@ -13,6 +13,7 @@
 	let body = doc.body.innerHTML;
 
 	// https://github.com/developit/snarkdown/issues/11
+	/** @param {string} markdown */
 	function snarkdownEnhanced(markdown) {
 		return markdown
 			.split(/(?:\r?\n){2,}/)
@@ -25,6 +26,7 @@
 	}
 
 	// https://github.com/developit/snarkdown/issues/70
+	/** @param {any} node */
 	function _sanitize(node) {
 		if (node.nodeType === 3) return;
 		if (node.nodeType !== 1 || /^(script|iframe|object|embed|svg)$/i.test(node.tagName)) {

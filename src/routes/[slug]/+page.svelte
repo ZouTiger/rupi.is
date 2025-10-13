@@ -4,9 +4,7 @@
 
 	import 'prism-themes/themes/prism-shades-of-purple.min.css';
 	// import Newsletter from '../../components/Newsletter.svelte';
-	import Substack from '../../components/Substack.svelte';
 	import Reactions from '../../components/Reactions.svelte';
-	import LatestPosts from '../../components/LatestPosts.svelte';
 	import { page } from '$app/stores';
 
 
@@ -25,6 +23,7 @@
 	/** @type {import('$lib/types').ContentItem} */
 	$: json = data.json; // warning: if you try to destructure content here, make sure to make it reactive, or your page content will not update when your user navigates
 
+	/** @type {HTMLElement} */
 	export let commentsEl;
 	$: issueNumber = json?.ghMetadata?.issueUrl?.split('/')?.pop()
 
@@ -132,18 +131,16 @@
 			if you liked this post! 🧡
 		{/if}
 	</div>
-	<div class="mb-8 text-black dark:text-white " bind:this={commentsEl} use:utterances={{number: issueNumber}}>
+	<div class="mb-8 text-black dark:text-white " bind:this={commentsEl} use:utterances={{number: issueNumber || ''}}>
 		Loading comments...
 		<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 		<button class="my-4 bg-blue-200 hover:bg-blue-100 text-black p-2 rounded-lg" 
-			on:click={() => injectScript(commentsEl, issueNumber)}
-			on:mouseover={() => injectScript(commentsEl, issueNumber)}
+			on:click={() => injectScript(commentsEl, issueNumber || '')}
+			on:mouseover={() => injectScript(commentsEl, issueNumber || '')}
 		>Load now</button>
 		<!-- <Comments ghMetadata={json.ghMetadata} /> -->
 	</div>
 
-	<Substack />
-	<LatestPosts items={data.list} />
 </div>
 
 <style>

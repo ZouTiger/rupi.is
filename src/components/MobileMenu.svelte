@@ -1,5 +1,6 @@
 <script>
 	let isOpen = false;
+	/** @type {boolean} */
 	let isMenuRendered;
 	$: {
 		if (isOpen) {
@@ -71,16 +72,6 @@
 					class="flex w-auto pb-4"
 					on:click={() => setTimeout(() => (isOpen = false), 300)}
 					href="/">Home</a
-				>
-			</li>
-			<li
-				class="border-b border-gray-300 font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
-				style="transition-delay: 250ms;"
-			>
-				<a
-					class="flex w-auto pb-4"
-					on:click={() => setTimeout(() => (isOpen = false), 300)}
-					href="/blog">Thoughts</a
 				>
 			</li>
 			<li

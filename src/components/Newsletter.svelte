@@ -74,7 +74,7 @@
 				action="https://buttondown.email/api/emails/embed-subscribe/swyx"
 				method="post"
 				target="popupwindow"
-				on:submit={() => toggleNewsletter() && window.open('https://buttondown.email/swyx', 'popupwindow')}
+				on:submit={() => { toggleNewsletter(); window.open('https://buttondown.email/swyx', 'popupwindow'); }}
 			>
 				<input
 					type="email"

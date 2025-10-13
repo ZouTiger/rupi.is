@@ -1,10 +1,10 @@
 <script>
 	// href={item.slug} title={item.data.title} date={item.data.date}
 	export let href = '#';
-	/** @type {import('$lib/types').ContentItem} */
+	/** @type {import('$lib/types').ContentItem | undefined} */
 	export let item = undefined;
 	export let category;
-	/** @type {import('$lib/types').GHMetadata} */
+	/** @type {import('$lib/types').GHMetadata | null} */
 	export let ghMetadata = null;
 	export let title = 'Untitled post';
 	/** @type {string} */

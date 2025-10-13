@@ -13,7 +13,7 @@
 		<Nav />
 	</Hst.Variant> -->
 	<Hst.Variant title="Index page cards">
-		<IndexCard href="/welcome" title="Welcome to swyxkit!" stringData="123,456 views">
+		<IndexCard href="/welcome" title="Welcome to swyxkit!" stringData="123,456 views" category="essay">
 			This is swyx's preferred starter for Svelte projects!
 		</IndexCard>
 	</Hst.Variant>
